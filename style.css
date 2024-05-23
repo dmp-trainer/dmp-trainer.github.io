@@ -1,0 +1,163 @@
+/* Light Mode */
+body{
+  background-color: lightgrey;
+  font-family: system-ui;
+  font-size: 16px;
+  color: #101010;
+}
+
+h1{
+  font-size: 60px;
+}
+
+h2{
+  font-size: 48px;
+}
+
+p{
+  line-height: 22px;
+}
+
+li{
+  padding-bottom: 5px;
+}
+
+table{
+  border-collapse: separate;
+  border-spacing: 10px;
+  min-height: 900px;
+}
+
+tr{
+  min-height: 300px;
+}
+
+#content{
+  margin: 5% 15% 20% 15%;
+}
+
+  /*HEADER*/
+#header{
+  display: block;
+  margin: 5% 15% 5% 15%;
+}
+
+  #header-title{
+    font-size: 72px;
+    text-decoration: none;
+  }
+
+  /*CONTENT BLOCK*/
+  .unit{
+    margin-bottom: 50px;
+  }
+
+  .card{
+    vertical-align: top;
+    border: 1px solid black;
+    padding: 10px;
+    width: 30%;
+  }
+
+  .material-icons{
+    color: mediumSlateBlue;
+  }
+
+  /*BUTTONS*/
+  .option-btn{
+    display: inline-block;
+    color: snow;
+    background-color: mediumSlateBlue;
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+    padding: 5px 30px 5px 30px;
+    border-radius: 20px;
+    border: 0;
+    transition-duration: 0.2s;
+    align-items: center;
+  }
+
+  .option-btn:hover{
+    background-color: dimgrey;
+    color: snow;
+  }
+
+  .option-btn:focus{
+    color: snow;
+    outline: none;
+  }
+
+  .option-btn:active{
+    background-color: lightgrey;
+    color: mediumSlateBlue;
+    transition-duration: 0s;
+  }
+
+  .button-link{
+    color: snow;
+  }
+
+  .button-link:hover{
+    color: snow;
+  }
+
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  body{
+    background-color: #101010;
+    font-family: system-ui;
+    font-size: 16px;
+    color: lightgrey;
+  }
+
+  .card{
+    vertical-align: top;
+    border: 1px solid snow;
+    padding: 10px;
+    width: 30%;
+  }
+
+}
+
+
+
+
+
+/*SMARTPHONE VERSION*/
+@media (max-width: 800px) {
+  #header-title{
+    font-size: 42px;
+  }
+
+  .unit-title{
+    font-size: 32px;
+  }
+
+  #header{
+    margin: 20px 20px 50px 20px;
+  }
+
+  .ava{
+    display: inline;
+    width: 100%;
+  }
+
+  #content{
+    margin: 20px 20px 50px 20px;
+  }
+
+  .unit-quote{
+    width: 80%;
+    padding-left: 15%
+  }
+
+  .unit-content{
+    column-count: 1;
+  }
+
+  .unit-about{
+    padding-right: 0;
+  }
+}

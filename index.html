@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Тренажер агитаторов</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+
+  <body>
+   <div id="header">
+     <div class="container">
+       <h1>Тренажер для агитаторов</h1>
+     </div>
+   </div>
+
+   <div id="content">
+         <div class="container">
+           <div class="unit">
+             <h2>Как тренироваться</h2>
+             <p class="text">Привет коллега!</p>
+             <p class="text">Спасибо большое, что поделючаетесь к такому важному делу. Этот небольшой инструмент поможет вам подготовиться к реальному общению с респондентами.</p>
+             <p class="text">Вам понадобится команда из трех человек, таймер и эта страничка. Ход тренировки может выглядеть так:</p>
+             <ol>
+               <li>Распределите роли для первого тура: агитатор, респондент и наблюдатель</li>
+               <li>Поставьте таймер на 7 минут</li>
+               <li><b>Если вы играете роль респондента</b>: вы будете отвечать на вопросы "агитатора". Для этого сгенерируйте персонажа, кликнув на кнопку "Сенерировать" на этой страничке. Внимательно изучите параметры и постарайтесь представить себе персонажа. Относитесь с сгенерированным параметрам творчески: вы можете немного их изменить и подстроить, чтобы вам было проще играть вашего персонажа </li>
+               <li><b>Если вы играете роль агитатора</b>: вы будете задавать вопросы и агитировать "респондента", исплоьзуя скрипт из анкеты. Пока респондент готовится, пробегитесь по тексту скрипта и настройтесь. Как только "респонодент" будет готов, включайте таймер и начинайте разговор, как будто вы позвонили реальному респонденту. Постарайтесь уложить весь разговор в 7 минут: ограничение времени поможет сосредоточиться на главном и активно вести разговор</li>
+               <li><b>Если вы наблюдатель</b>: вы будете играть роль тренера для ваших коллег - внимательно наблюдать за ходом беседы "агитатора" с "респондентом" и <em>по завершении разговора</em> давать обратную связь. Как дать хорошую обратную связь: отметьте сначала, что получилось хорошо, потом переходите к улучшениям и ошибкам. Подмечайте как содержание разговора, так и интонации. Делитесь собственными ощущениями от разговора и предлагайте идеи - как бы вы сделали по-другому на месте коллег. Уделите время и "агитатору" и "респонденту" - хорошее понимание роли респондента тоже важно для крутой агитации </li>
+               <li>Поменяйтесь ролями</li>
+
+             </ol>
+           </div>
+         </div>
+
+         <div class="container">
+           <div class="unit">
+             <h2>Генератор персонажей</h2>
+               <button class="option-btn" id="btn-generate">Сгенерировать!</button>
+             <div class="unit" style="overflow-x:auto;">
+               <table>
+                 <tr>
+                   <td class="card">
+                     <i class="material-icons">diversity_1</i>
+                     <h3>1. Социальное положение:</h3>
+                      <p class="pc-atribute" id="social"></p>
+                   </td>
+                   <td class="card">
+                     <i class="material-icons">paid</i>
+                     <h3>2. Доход</h3>
+                     <p class="pc-atribute" id="income"></p>
+                   </td>
+                   <td class="card">
+                     <i class="material-icons">flag</i>
+                     <h3>3. Отношение к войне</h3>
+                     <p class="pc-atribute" id="war"></p>
+                   </td>
+                 </tr>
+                 <tr>
+                   <td class="card">
+                     <i class="material-icons">error</i>
+                     <h3>4. Проблемы в связи с войной</h3>
+                     <p class="pc-atribute" id="engagement"></p>
+                   </td>
+                   <td class="card">
+                     <i class="material-icons">warning</i>
+                     <h3>5. Какие проблемы беспокоят</h3>
+                     <p class="pc-atribute" id="problem"></p>
+                   </td>
+                   <td class="card">
+                     <i class="material-icons">shield</i>
+                     <h3>6. Кто должен воевать</h3>
+                     <p class="pc-atribute" id="military"></p>
+                   </td>
+                 </tr>
+                 <tr>
+                   <td class="card">
+                     <i class="material-icons">star</i>
+                     <h3>7. Что такое патриотизм</h3>
+                     <p class="pc-atribute" id="patriotism"></p>
+                   </td>
+                   <td class="card">
+                     <i class="material-icons">favorite</i>
+                     <h3>8. Главная ценность</h3>
+                     <p class="pc-atribute" id="values"></p>
+                   </td>
+                   <td></td>
+                 </tr>
+               </table>
+
+             </div>
+           </div>
+         </div>
+
+
+
+
+
+<script src="random_pc.js"></script>
+</body>
+</html>
