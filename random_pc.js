@@ -14,7 +14,7 @@ function generatePC() {
   document.getElementById("military").innerHTML = lib_military[Math.floor(Math.random() * 11)].text;
 
   document.getElementById("patriotism").innerHTML = lib_patriotism[Math.floor(Math.random() * 11)].text;
-//  document.getElementById("values").innerHTML = lib_values[Math.floor(Math.random() * 11)].text;
+  document.getElementById("values").innerHTML = "Пока не придумали :) Но скоро всё будет";
 };
 
 
